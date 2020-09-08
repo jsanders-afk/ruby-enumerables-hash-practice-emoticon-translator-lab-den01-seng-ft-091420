@@ -33,6 +33,7 @@ def get_english_meaning(emoticons, emote)
   else
     found[0]
   end
+binding.pry  
 end
 binding.pry
 

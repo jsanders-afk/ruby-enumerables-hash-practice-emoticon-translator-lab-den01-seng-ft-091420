@@ -24,12 +24,12 @@ end
 
 
 def get_english_meaning(emoticons, emote)
-  arg = Proc.new {"Sorry"}
+  arg = {"Sorry"}
   load_library(emoticons)
   found = load_library(emoticons).find(arg) do |emotname, eoj|
     load_library(emoticons)[emotname][:japanese] == emote
           end
-  found        
+  found[0]        
 end
 binding.pry
 

@@ -52,7 +52,7 @@ def get_japanese_emoticon(emoticons, emot)
     found[1][:japanese]
   end
 end
-binding.pry
+
 
 
 

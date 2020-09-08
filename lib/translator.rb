@@ -24,9 +24,9 @@ end
 
 
 def get_english_meaning(emoticons, emote)
-  arg = Proc.new {"No matches found"}
+  arg = "No matches found"
   load_library(emoticons)
-  found = load_library(emoticons).find(arg.to_s) do |emotname, eoj|
+  found = load_library(emoticons).find(arg) do |emotname, eoj|
     load_library(emoticons)[emotname][:japanese] == emote
           end
   found[0]        

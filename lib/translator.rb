@@ -35,7 +35,7 @@ def get_english_meaning(emoticons, emote)
     found[0]
   end
 end
-binding.pry
+
 
  
 

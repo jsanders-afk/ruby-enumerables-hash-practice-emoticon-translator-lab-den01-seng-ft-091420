@@ -29,7 +29,6 @@ def get_english_meaning(emoticons, emote)
           end
 found[0]
 end
-binding.pry
 
 
  

@@ -46,6 +46,10 @@ def get_japanese_emoticon(emoticons, emot)
     found = the_lib.find(arg) do |emotname, eoj|
     the_lib[emotname][:english] == emot
     end
+  if found[0] =="!"
+    p "Sorry, that emoticon was not found"
+  else 
+    found[1][:japanese]
 end
 binding.pry
 

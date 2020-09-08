@@ -50,6 +50,7 @@ def get_japanese_emoticon(emoticons, emot)
     p "Sorry, that emoticon was not found"
   else 
     found[1][:japanese]
+  end
 end
 binding.pry
 

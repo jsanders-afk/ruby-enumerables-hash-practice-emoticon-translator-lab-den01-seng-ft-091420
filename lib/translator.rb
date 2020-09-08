@@ -25,10 +25,12 @@ end
 
 def get_english_meaning(emoticons, emote)
   load_library(emoticons)
-  found = load_library(emoticons).find(ifnone) do |emotname, eoj|
+  found = load_library(emoticons).find(ifnone = "nope") do |emotname, eoj|
     load_library(emoticons)[emotname][:japanese] == emote
           end
-found[0]
+  if found[0].to_string == "nope"
+    p "sorry, don't understand"
+  end
 end
 binding.pry
 

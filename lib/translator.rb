@@ -40,16 +40,7 @@ end
 
 
 def get_japanese_emoticon(emoticons, emot)
-  the_lib = load_library(emoticons)
-  arg = Proc.new {"!"}
-  found = the_lib.find(arg) do |emotname, eoj|
-    the_lib[emotname][:english] == emote
-          end
-  if found[0] == "!"
-    p "Sorry, that emoticon was not found"
-  else
-    found[0]
-  end
+  
 end
 
 

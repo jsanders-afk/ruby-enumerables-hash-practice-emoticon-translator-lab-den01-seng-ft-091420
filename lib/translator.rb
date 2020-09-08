@@ -40,11 +40,11 @@ end
 
 
 def get_japanese_emoticon(emoticons, emot)
+  p emot
   the_lib = load_library(emoticons)
   arg = Proc.new {"!"}
   the_lib.find(arg) do |emotname, eoj|
-    the_lib[emotname][:english] == emote
-        
+    putsthe_lib[emotname][:english] == emote
   end
 end
 binding.pry

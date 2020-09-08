@@ -27,7 +27,7 @@ def get_english_meaning(emoticons, emote)
   found = load_library(emoticons).find do |emotname, eoj|
     load_library(emoticons)[emotname][:japanese] == emote
           end
-found
+found[0]
 end
 binding.pry
 

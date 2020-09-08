@@ -53,7 +53,7 @@ binding.pry
 
 #the_lib.find(arg) do |emotname, eoj|
  #   putsthe_lib[emotname][:english] == emote
-
+#    "O:)"
 
 
 

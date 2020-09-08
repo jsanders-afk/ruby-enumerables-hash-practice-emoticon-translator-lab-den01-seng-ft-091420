@@ -24,12 +24,12 @@ end
 
 
 def get_english_meaning(emoticons, emote)
-  meaning = []
+  
   load_library(emoticons).find do |emotname, eoj|
     load_library(emoticons)[emotname][:japanese] == emote
-    meaning.push(emotname)
+    load_library(emoticons)[emotname][:japanese]
   end
-  meaning
+
 end
 binding.pry
 

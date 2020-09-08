@@ -23,7 +23,7 @@ def load_library(emoticons)
 end
 
 
-def get_english_meaning(emoticons, emote)
+def get_english_meaning(yaml, emote)
   load_library(emoticons)
   found = load_library(emoticons).find(ifnone = nil) do |emotname, eoj|
     load_library(emoticons)[emotname][:japanese] == emote

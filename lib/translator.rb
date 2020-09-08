@@ -30,7 +30,7 @@ def get_english_meaning(emoticons, emote)
     load_library(emoticons)[emotname][:japanese] == emote
           end
   if found[0] == "!"
-    p "sorry, not there"
+    p "Sorry, that emoticon was not found"
   else
     found[0]
   end
